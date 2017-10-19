@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+    <title></title>
+    <script type="text/javascript">
+            var wid=document.documentElement.clientWidth
+            document.documentElement.style.fontSize=wid/342*100+"px"
+            window.onresize=function(){
+                document.location.reload()
+            }
+        </script>
+
+    <script src="boot/js/zepto.min.js"></script>
+    <script src="boot/js/swiper.min.js"></script>
+    <script src="boot/js/iscroll-probe.js"></script>
+
+    <link rel="stylesheet" href="boot/css/swiper.min.css"/>
+    <link rel="stylesheet" href="boot/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="boot/css/index.css"/>
+</head>
+<body>
+
+<!--头部-->
+<header class="sy-header">
+    <input type="text" placeholder="搜索今日最新推荐"/>
+    <img src="image/03_03.png" alt=""/>
+</header>
+
+<!--内容-->
+<main class="sy-main">
+    <!--背景图-->
+    <div class="sy-back">
+        <img src="image/项目首页，牛_01.png" alt=""/>
+    </div>
+
+    <!--图标-->
+    <div class="sy-tubiao">
+        <ul>
+            <li>
+                <img src="image/img_03.jpg" alt=""/>
+                美食
+            </li>
+            <li>
+                <img src="image/img_05.jpg" alt=""/>
+                美食
+            </li>
+            <li>
+                <img src="image/img_07.jpg" alt=""/>
+                美食
+            </li>
+            <li>
+                <img src="image/img_09.jpg" alt=""/>
+                美食
+            </li>
+            <li>
+                <img src="image/img_11.jpg" alt=""/>
+                美食
+            </li>
+            <li>
+                <img src="image/img_18.jpg" alt=""/>
+                美食
+            </li>
+            <li>
+                <img src="image/img_19.jpg" alt=""/>
+                美食
+            </li>
+            <li>
+                <img src="image/img_21.jpg" alt=""/>
+                美食
+            </li>
+            <li>
+                <img src="image/img_22.jpg" alt=""/>
+                美食
+            </li>
+            <li>
+                <img src="image/img_23.jpg" alt=""/>
+                美食
+            </li>
+        </ul>
+    </div>
+
+    <!--分割线-->
+    <div class="fengexian"></div>
+
+    <!--菜谱-->
+    <div class="sy-chaipu">
+        <p>—热门菜谱&nbsp;&nbsp;BEST—</p>
+        <div>
+            <img src="image/项目首页，牛_17.png" alt=""/>
+            <div>
+                <p>红烧排骨</p>
+                <p>浮动防守打法的发大水发多少发顺丰第三方撒地方舒服撒佛挡杀佛</p>
+            </div>
+        </div>
+        <div>
+            <img src="image/项目首页，牛_20.png" alt=""/>
+            <div>
+                <p>蔬菜拌面</p>
+                <p>浮动防守打法的发大水发多少发顺丰第三方撒地方舒服撒佛挡杀佛</p>
+            </div>
+        </div>
+    </div>
+
+    <!--分割线-->
+    <div class="fengexian"></div>
+
+    <!--优选 iscroll-->
+    <div class="sy-is1">
+        <p>—为你优选&nbsp;&nbsp;BEST—</p>
+        <div class="is1">
+            <ul>
+                <li>
+                    <img src="image/项目首页，牛_22.png" alt=""/>
+                </li>
+                <li>
+                    <img src="image/项目首页，牛_24.png" alt=""/>
+                </li>
+                <li>
+                    <img src="image/项目首页，牛_26.png" alt=""/>
+                </li>
+                <li>
+                    <img src="image/项目首页，牛_22.png" alt=""/>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</main>
+
+<!--底部-->
+    <footer class="sy-fot">
+        <a href="#sy" class="sy-bg"><span class="glyphicon glyphicon-home"></span>首页</a>
+        <a href="#fx"><span class="glyphicon glyphicon-search"></span>发现</a>
+        <a href="#sp"><span class="glyphicon glyphicon-facetime-video"></span>视频</a>
+        <a href="#sq"><span class="glyphicon glyphicon-print"></span>社区</a>
+        <a href="#wd"><span class="glyphicon glyphicon-user"></span>我的</a>
+    </footer>
+
+</body>
+<script>
+
+//    点击切换
+    $(".sy-fot a").click(function(){
+        $(this).addClass("sy-bg").siblings().removeClass("sy-bg")
+    });
+
+
+//    拖拽
+    var is1 = new IScroll(".is1",{
+        scrollX:true
+    });
+
+</script>
+</html>
